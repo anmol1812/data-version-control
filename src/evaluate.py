@@ -16,7 +16,7 @@ def main(repo_path):
     metrics = {"accuracy": accuracy}
     accuracy_path = repo_path / "metrics/accuracy.json"
     accuracy_path.write_text(json.dumps(metrics))
-
+    print(metrics)
 
 if __name__ == "__main__":
     repo_path = Path(__file__).parent.parent
